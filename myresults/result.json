@@ -1,0 +1,358 @@
+{
+	"nvbandwidth" : 
+	{
+		"CUDA Runtime Version" : 12080,
+		"Driver Version" : "570.86.16",
+		"GPU Device list" : 
+		[
+			"0: NVIDIA GeForce RTX 5090 (00000000:0c:00): (nf5468-m7)",
+			"1: NVIDIA GeForce RTX 5090 (00000000:22:00): (nf5468-m7)",
+			"2: NVIDIA GeForce RTX 5090 (00000000:b2:00): (nf5468-m7)",
+			"3: NVIDIA GeForce RTX 5090 (00000000:e0:00): (nf5468-m7)"
+		],
+		"git_version" : "v0.8",
+		"testcases" : 
+		[
+			{
+				"bandwidth_description" : "memcpy CE CPU(row) -> GPU(column) bandwidth (GB/s)",
+				"bandwidth_matrix" : 
+				[
+					[
+						"56.3829",
+						"56.3762",
+						"56.3944",
+						"56.3959"
+					]
+				],
+				"name" : "host_to_device_memcpy_ce",
+				"status" : "Passed",
+				"sum" : 225.54936446300002
+			},
+			{
+				"bandwidth_description" : "memcpy CE CPU(row) <- GPU(column) bandwidth (GB/s)",
+				"bandwidth_matrix" : 
+				[
+					[
+						"57.004",
+						"56.9175",
+						"56.9681",
+						"56.9794"
+					]
+				],
+				"name" : "device_to_host_memcpy_ce",
+				"status" : "Passed",
+				"sum" : 227.86905981900003
+			},
+			{
+				"bandwidth_description" : "memcpy CE CPU(row) <-> GPU(column) bandwidth (GB/s)",
+				"bandwidth_matrix" : 
+				[
+					[
+						"44.3294",
+						"44.0729",
+						"40.5622",
+						"43.1987"
+					]
+				],
+				"name" : "host_to_device_bidirectional_memcpy_ce",
+				"status" : "Passed",
+				"sum" : 172.163192826
+			},
+			{
+				"bandwidth_description" : "memcpy CE CPU(row) <-> GPU(column) bandwidth (GB/s)",
+				"bandwidth_matrix" : 
+				[
+					[
+						"44.1853",
+						"43.8374",
+						"40.8854",
+						"43.2061"
+					]
+				],
+				"name" : "device_to_host_bidirectional_memcpy_ce",
+				"status" : "Passed",
+				"sum" : 172.11416697300001
+			},
+			{
+				"name" : "device_to_device_memcpy_read_ce",
+				"status" : "Waived"
+			},
+			{
+				"name" : "device_to_device_memcpy_write_ce",
+				"status" : "Waived"
+			},
+			{
+				"name" : "device_to_device_bidirectional_memcpy_read_ce",
+				"status" : "Waived"
+			},
+			{
+				"name" : "device_to_device_bidirectional_memcpy_write_ce",
+				"status" : "Waived"
+			},
+			{
+				"bandwidth_description" : "memcpy CE CPU(row) <- GPU(column) bandwidth (GB/s)",
+				"bandwidth_matrix" : 
+				[
+					[
+						"38.5214",
+						"37.5013",
+						"38.4018",
+						"37.9928"
+					]
+				],
+				"name" : "all_to_host_memcpy_ce",
+				"status" : "Passed",
+				"sum" : 152.417248919
+			},
+			{
+				"bandwidth_description" : "memcpy CE CPU(row) <-> GPU(column) bandwidth (GB/s)",
+				"bandwidth_matrix" : 
+				[
+					[
+						"23.2823",
+						"23.2892",
+						"23.2937",
+						"23.2531"
+					]
+				],
+				"name" : "all_to_host_bidirectional_memcpy_ce",
+				"status" : "Passed",
+				"sum" : 93.118262607999995
+			},
+			{
+				"bandwidth_description" : "memcpy CE CPU(row) -> GPU(column) bandwidth (GB/s)",
+				"bandwidth_matrix" : 
+				[
+					[
+						"56.3685",
+						"56.3659",
+						"56.3888",
+						"56.3851"
+					]
+				],
+				"name" : "host_to_all_memcpy_ce",
+				"status" : "Passed",
+				"sum" : 225.50828814500002
+			},
+			{
+				"bandwidth_description" : "memcpy CE CPU(row) <-> GPU(column) bandwidth (GB/s)",
+				"bandwidth_matrix" : 
+				[
+					[
+						"23.1298",
+						"23.143",
+						"23.1686",
+						"23.1635"
+					]
+				],
+				"name" : "host_to_all_bidirectional_memcpy_ce",
+				"status" : "Passed",
+				"sum" : 92.604906459999995
+			},
+			{
+				"name" : "all_to_one_write_ce",
+				"status" : "Waived"
+			},
+			{
+				"name" : "all_to_one_read_ce",
+				"status" : "Waived"
+			},
+			{
+				"name" : "one_to_all_write_ce",
+				"status" : "Waived"
+			},
+			{
+				"name" : "one_to_all_read_ce",
+				"status" : "Waived"
+			},
+			{
+				"bandwidth_description" : "memcpy SM CPU(row) -> GPU(column) bandwidth (GB/s)",
+				"bandwidth_matrix" : 
+				[
+					[
+						"51.4503",
+						"51.4533",
+						"51.4589",
+						"51.4509"
+					]
+				],
+				"name" : "host_to_device_memcpy_sm",
+				"status" : "Passed",
+				"sum" : 205.813394053
+			},
+			{
+				"bandwidth_description" : "memcpy SM CPU(row) <- GPU(column) bandwidth (GB/s)",
+				"bandwidth_matrix" : 
+				[
+					[
+						"46.6432",
+						"46.5983",
+						"46.7423",
+						"46.7464"
+					]
+				],
+				"name" : "device_to_host_memcpy_sm",
+				"status" : "Passed",
+				"sum" : 186.73022778000001
+			},
+			{
+				"bandwidth_description" : "memcpy SM CPU(row) <-> GPU(column) bandwidth (GB/s)",
+				"bandwidth_matrix" : 
+				[
+					[
+						"42.5468",
+						"42.5501",
+						"42.5286",
+						"42.5164"
+					]
+				],
+				"name" : "host_to_device_bidirectional_memcpy_sm",
+				"status" : "Passed",
+				"sum" : 170.14195241300001
+			},
+			{
+				"bandwidth_description" : "memcpy SM CPU(row) <-> GPU(column) bandwidth (GB/s)",
+				"bandwidth_matrix" : 
+				[
+					[
+						"42.5257",
+						"42.5068",
+						"42.532",
+						"42.5274"
+					]
+				],
+				"name" : "device_to_host_bidirectional_memcpy_sm",
+				"status" : "Passed",
+				"sum" : 170.09182915900001
+			},
+			{
+				"name" : "device_to_device_memcpy_read_sm",
+				"status" : "Waived"
+			},
+			{
+				"name" : "device_to_device_memcpy_write_sm",
+				"status" : "Waived"
+			},
+			{
+				"name" : "device_to_device_bidirectional_memcpy_read_sm",
+				"status" : "Waived"
+			},
+			{
+				"name" : "device_to_device_bidirectional_memcpy_write_sm",
+				"status" : "Waived"
+			},
+			{
+				"bandwidth_description" : "memcpy SM CPU(row) <- GPU(column) bandwidth (GB/s)",
+				"bandwidth_matrix" : 
+				[
+					[
+						"31.5489",
+						"31.0772",
+						"30.7104",
+						"30.6092"
+					]
+				],
+				"name" : "all_to_host_memcpy_sm",
+				"status" : "Passed",
+				"sum" : 123.94567777100002
+			},
+			{
+				"bandwidth_description" : "memcpy SM CPU(row) <-> GPU(column) bandwidth (GB/s)",
+				"bandwidth_matrix" : 
+				[
+					[
+						"29.0717",
+						"29.226",
+						"29.5968",
+						"29.767"
+					]
+				],
+				"name" : "all_to_host_bidirectional_memcpy_sm",
+				"status" : "Passed",
+				"sum" : 117.66155202300001
+			},
+			{
+				"bandwidth_description" : "memcpy SM CPU(row) -> GPU(column) bandwidth (GB/s)",
+				"bandwidth_matrix" : 
+				[
+					[
+						"51.4463",
+						"51.4463",
+						"51.4521",
+						"51.4444"
+					]
+				],
+				"name" : "host_to_all_memcpy_sm",
+				"status" : "Passed",
+				"sum" : 205.78901663300002
+			},
+			{
+				"bandwidth_description" : "memcpy SM CPU(row) <-> GPU(column) bandwidth (GB/s)",
+				"bandwidth_matrix" : 
+				[
+					[
+						"38.5773",
+						"38.6301",
+						"39.4461",
+						"39.3305"
+					]
+				],
+				"name" : "host_to_all_bidirectional_memcpy_sm",
+				"status" : "Passed",
+				"sum" : 155.98393402599999
+			},
+			{
+				"name" : "all_to_one_write_sm",
+				"status" : "Waived"
+			},
+			{
+				"name" : "all_to_one_read_sm",
+				"status" : "Waived"
+			},
+			{
+				"name" : "one_to_all_write_sm",
+				"status" : "Waived"
+			},
+			{
+				"name" : "one_to_all_read_sm",
+				"status" : "Waived"
+			},
+			{
+				"bandwidth_description" : "memory latency SM CPU(row) <-> GPU(column) (ns)",
+				"bandwidth_matrix" : 
+				[
+					[
+						"574.737",
+						"574.611",
+						"620.331",
+						"582.744"
+					]
+				],
+				"name" : "host_device_latency_sm",
+				"status" : "Passed",
+				"sum" : 2352.4240315891802
+			},
+			{
+				"name" : "device_to_device_latency_sm",
+				"status" : "Waived"
+			},
+			{
+				"bandwidth_description" : "memcpy local GPU(column) bandwidth (GB/s)",
+				"bandwidth_matrix" : 
+				[
+					[
+						"760.777",
+						"761.047",
+						"761.047",
+						"760.912"
+					]
+				],
+				"name" : "device_local_copy",
+				"status" : "Passed",
+				"sum" : 3043.7825317299998
+			}
+		],
+		"version" : "v0.8"
+	}
+}
+
